@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anuradhakelum.istqbmockexam.ScoreActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardgraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toTopOf="@id/cardScore"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/notAnsweredTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="NOT ANSWERED"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+                        <ProgressBar
+                            android:id="@+id/notAnswered"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:progress="0" />
+
+                        <TextView
+                            android:id="@+id/incorrectAnsweredTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="INCORRECT ANSWERS"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+                        <ProgressBar
+                            android:id="@+id/incorrectAnswer"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:progress="0" />
+
+                        <TextView
+                            android:id="@+id/correctAnsweredTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="CORRECT ANSWERS"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor" />
+
+                        <ProgressBar
+                            android:id="@+id/correctAnswers"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:progress="0" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardgraph">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.daimajia.numberprogressbar.NumberProgressBar
+                            android:id="@+id/oneone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginEnd="8dp"
+
+
+                            android:padding="10dp"
+                            app:layout_constraintBottom_toTopOf="@id/textView6"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            custom:progress_current="80"
+
+                            custom:progress_max="100"
+                            custom:progress_reached_bar_height="1.5dp"
+                            custom:progress_reached_color="#3498DB"
+                            custom:progress_text_color="#3498DB"
+                            custom:progress_text_offset="1dp"
+                            custom:progress_text_size="10sp"
+                            custom:progress_text_visibility="visible"
+                            custom:progress_unreached_bar_height="0.75dp"
+                            custom:progress_unreached_color="#CCCCCC" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="100%"
+                            android:textAlignment="center"
+                            android:textSize="100sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textview07"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/oneone" />
+
+                        <TextView
+                            android:id="@+id/textview07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="YOU HAVE PASSED THIS MOCK EXAM"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor"
+                            app:layout_constraintBottom_toTopOf="@id/nextbtn"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+                        <Button
+                            android:id="@+id/nextbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/mybutton"
+                            android:onClick="viewResult"
+                            android:padding="10dp"
+                            android:text="REVIEW"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/exitbtn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/textview07" />
+
+                        <Button
+                            android:id="@+id/exitbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/mybutton"
+                            android:onClick="goToHome"
+                            android:padding="10dp"
+                            android:text="EXIT"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/nextbtn"
+                            app:layout_constraintTop_toBottomOf="@id/textview07" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

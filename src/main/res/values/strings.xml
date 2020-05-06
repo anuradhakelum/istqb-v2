@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ISTQB Mock Exam</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    #Custom Strings#
+
+    <string name="sample">Sample text</string>
+    <string name="wellcome">Welcome</string>
+    <string name="description">ISTQB Mock Exam is an application where you can prepare for the exam
+        and it contains 5oo+ exam questions from different resources.</string>
+    <string name="startExam">To start mock exam from all chapters press start button</string>
+    <string name="startChapterExam">To start mock exam from the selected chapter press select chapter button</string>
+    <string name="title_activity_mock_exam">Mock Exam</string>
+
+    <string name="title_activity_list_view__answers">ListView_Answers</string>
+    <string name="title_activity_select_the_chapter">SelectTheChapter</string>
+    <string name="title_activity_score">scoreActivity</string>
+    <string name="exam_passed">YOU HAVE PASSED ISTQB MOCK EXAM</string>
+    <string name="exam_FAILED">YOU HAVE FAILED ISTQB MOCK EXAM</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="ISTQB">The International Software Testing Qualifications Board (ISTQB) is a
+        software testing qualification certification organisation that operates internationally.
+        Founded in Edinburgh in November 2002, ISTQB is a non-profit association legally registered
+        in Belgium. ISTQB Certified Tester is a standardized qualification for software testers and
+        the certification is offered by the ISTQB. The qualifications are based on a syllabus, and
+        there is a hierarchy of qualifications and guidelines for accreditation and examination. The
+        ISTQB is a software testing qualification certification organization having over 500,000
+        certifications issued; the ISTQB consists of 57 member boards worldwide representing 81 countries. \n -wikipedia-</string>
+    <string name="whyistqb">To get an ISTQB® Certified Tester Foundation Level Certificate you must
+        successfully pass the Foundation Exam administered by your National or Regional Board or Examination Provider.
+        Upon successful completion of the exam, you will be issued with an ISTQB® Foundation Level
+        Certificate, which is internationally recognized.\n -www.istqb.org-</string>
+    <string name="about">Version 2.07\nSuperMyDroid App\n <a href="anuradhakelum@ymail.com">anuradhakelum@ymail.com</a></string>
+    <string name="version">Version 2.07</string>
+    <string name="istqb_mock_exam">ISTQB MOCK EXAM</string>
+    <string name="select_a_chapter">SELECT A CHAPTER</string>
+    <string name="start">START</string>
+
+</resources>

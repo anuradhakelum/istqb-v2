@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="EXAMS">
+            <menu>
+        <item
+            android:id="@+id/mock_exam"
+            android:icon="@drawable/mock_exam"
+            android:title="MOCK EXAM" />
+        <item
+            android:id="@+id/selectchapter"
+            android:icon="@drawable/select_chapter"
+            android:title="SELECT A CHAPTER" />
+        <item
+            android:id="@+id/guessanswer"
+            android:icon="@drawable/guess_answers"
+            android:title="GUESS ANSWER" />
+        <item
+            android:id="@+id/guesshapters"
+            android:icon="@drawable/selectbychapter"
+            android:title="GUESS ANSWER BY CHAPTER" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="SETTING" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="ABOUT" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="SOCIAL">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="SHARE" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="FEEDBACK" />
+        </menu>
+    </item>
+
+</menu>
